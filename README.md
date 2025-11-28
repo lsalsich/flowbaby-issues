@@ -28,7 +28,7 @@ Flowbaby helps developers maintain perfect context across coding sessions by aut
 
 We welcome contributions from the community! Here's how you can help:
 
-1. **Report bugs** — Found something broken? [Open a bug report](../../issues/new?template=bug_report.yml).
+1. **Report bugs** — Found something broken? [Open a bug report](../../issues/new?template=bug.yml).
 2. **Suggest features** — Have an idea? [Submit a feature request](../../issues/new?template=feature_request.yml).
 3. **Answer questions** — Help others in [Discussions](../../discussions).
 4. **Improve docs** — Spot an issue in our documentation? [Submit docs feedback](../../issues/new?template=docs_feedback.yml).

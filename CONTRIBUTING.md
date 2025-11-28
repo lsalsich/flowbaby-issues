@@ -34,7 +34,7 @@ This is the **public issue tracker** for Flowbaby. The core Flowbaby implementat
 | Give docs feedback                 | [New Issue → Docs Feedback][docs]      |
 | Share how I'm using Flowbaby       | [Discussions → Show and Tell][show]    |
 
-[bug]: ../../issues/new?template=bug_report.yml
+[bug]: ../../issues/new?template=bug.yml
 [feature]: ../../issues/new?template=feature_request.yml
 [docs]: ../../issues/new?template=docs_feedback.yml
 [qa]: ../../discussions/categories/q-a
