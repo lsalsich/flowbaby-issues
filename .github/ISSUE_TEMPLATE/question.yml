@@ -1,0 +1,73 @@
+name: ❓ Question
+description: Ask a question about Flowbaby (consider using Discussions for general questions)
+title: "[Question]: "
+labels: ["type: question", "status: needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Flowbaby? We're here to help!
+
+        **💡 Tip**: For general questions and community discussion, consider using [GitHub Discussions](https://github.com/lsalsich/flowbaby-issues/discussions/categories/q-a) instead. Issues are best for specific, actionable questions that may reveal bugs or documentation gaps.
+
+        **📚 Check first**: Have you looked at [docs.flowbaby.ai](https://docs.flowbaby.ai)?
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: How do I...? Why does...? What is...?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: |
+        Provide any context that might help us answer your question.
+        What are you trying to accomplish? What's your setup?
+      placeholder: |
+        I'm trying to...
+        My setup is...
+    validations:
+      required: false
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What I've Tried
+      description: |
+        What have you already tried or looked at?
+        This helps us avoid suggesting things you've already done.
+      placeholder: |
+        I've tried...
+        I looked at...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related Area
+      description: Which part of Flowbaby is this question about?
+      options:
+        - Getting started / Installation
+        - Memory storage and retrieval
+        - VS Code integration
+        - Configuration / Settings
+        - API / Programmatic usage
+        - Performance
+        - Other / Not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other details that might be relevant.
+      placeholder: Additional information...
+    validations:
+      required: false

@@ -1,0 +1,81 @@
+name: 📚 Documentation Feedback
+description: Report an issue or suggest an improvement for docs.flowbaby.ai
+title: "[Docs]: "
+labels: ["type: docs", "status: needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve our documentation!
+
+        Found a typo, unclear explanation, missing information, or have a suggestion? Let us know.
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Documentation Page URL
+      description: Which page has the issue? Paste the URL from docs.flowbaby.ai.
+      placeholder: https://docs.flowbaby.ai/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of Issue
+      description: What kind of documentation issue is this?
+      options:
+        - Typo or grammatical error
+        - Incorrect information
+        - Unclear or confusing explanation
+        - Missing information
+        - Outdated content
+        - Broken link
+        - Suggestion for improvement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue or your suggestion.
+      placeholder: |
+        The section about... says... but it should say...
+        I was confused by...
+        It would be helpful to add...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-change
+    attributes:
+      label: Suggested Change
+      description: |
+        If you have a specific suggestion for how to fix or improve the documentation, describe it here.
+      placeholder: |
+        I suggest changing... to...
+        Consider adding a section about...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information, screenshots, or context.
+      placeholder: Additional information...
+    validations:
+      required: false
+
+  - type: textarea
+    id: internal-reference
+    attributes:
+      label: Internal Reference (Maintainers Only)
+      description: |
+        For maintainers: Link to related internal issues if applicable.
+        Format: `lsalsich/flowbaby-docs#123`
+      placeholder: "lsalsich/flowbaby-docs#..."
+    validations:
+      required: false

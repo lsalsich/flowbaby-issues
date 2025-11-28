@@ -1,0 +1,21 @@
+# Issue Template Chooser Configuration
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/lsalsich/flowbaby-issues/discussions/categories/q-a
+    about: For questions and help, please use GitHub Discussions instead of opening an issue.
+
+  - name: 💡 Share an Idea
+    url: https://github.com/lsalsich/flowbaby-issues/discussions/categories/ideas
+    about: Have an idea you'd like to discuss before it becomes a feature request? Start a discussion.
+
+  - name: 📚 Documentation
+    url: https://docs.flowbaby.ai
+    about: Check out our documentation for guides and reference.
+
+  - name: 🔒 Security Issue
+    url: https://flowbaby.ai/security
+    about: For security vulnerabilities, please email security@flowbaby.ai instead of opening a public issue.

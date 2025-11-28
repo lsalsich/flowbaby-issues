@@ -1,0 +1,98 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Flowbaby
+title: "[Feature]: "
+labels: ["type: feature", "status: needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! We love hearing ideas from the community.
+
+        Before submitting, please check [existing feature requests](https://github.com/lsalsich/flowbaby-issues/issues?q=is%3Aissue+label%3A%22type%3A+feature%22) to avoid duplicates.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: |
+        What problem does this feature solve? What's the motivation behind it?
+        A clear problem statement helps us understand the "why" behind the request.
+      placeholder: |
+        I'm frustrated when...
+        It would be helpful if...
+        Currently I have to work around this by...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: |
+        Describe the solution you'd like. Be as specific as possible.
+        If you have ideas about how it might work, include them here.
+      placeholder: |
+        I would like Flowbaby to...
+        This could work by...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: |
+        Have you considered any alternative solutions or workarounds?
+        What are the trade-offs?
+      placeholder: |
+        I've considered...
+        Another approach might be...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How important is this feature to your workflow?
+      options:
+        - Nice to have
+        - Would improve my workflow
+        - Critical for my use case
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: |
+        Describe a specific scenario where this feature would be useful.
+        Real-world examples help us understand the value.
+      placeholder: |
+        When I'm working on...
+        I need to...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: |
+        Add any other context, mockups, screenshots, or references.
+        Links to similar features in other tools are also helpful.
+      placeholder: Any additional information...
+    validations:
+      required: false
+
+  - type: textarea
+    id: internal-reference
+    attributes:
+      label: Internal Reference (Maintainers Only)
+      description: |
+        For maintainers: Link to related internal issues if applicable.
+        Format: `lsalsich/flowbaby#123`
+      placeholder: "lsalsich/flowbaby#..."
+    validations:
+      required: false
